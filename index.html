@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosna on top</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .gallery-container {
+            display: flex;
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .main-image {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.5s ease-in-out;
+            border-radius: 8px;
+        }
+
+        .side-images {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            overflow: scroll;
+        }
+
+        .side-images img {
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Bosna</h1>
+        <nav>
+            <a href="#o-bosni" class="animated">O Državi</a>
+            <a href="#sarajevo" class="animated">Glavno Mesto</a>
+            <a href="#prehrana" class="animated">Prehrana</a>
+            <a href="#Prebivalstvo" class="animated">Prebivalstvo</a>
+            <a href="#Turizem" class="animated">Turizem</a>
+        </nav>
+    </header>
+    <section id="o-bosni">
+        <div>
+            <h1>Živjo teja, vsa koda ja navoljo na mojem <a href="">GitHubu</a></h1>
+        </div>
+        <div id="o_državi_div">
+            <h1 style="font-size: 32px;">O Državi</h1>
+            <h2 style="font-size: large;">Bosna je prelepa država, Ima morje, Gore in gradbenike. Tukaj je par dejstev
+                ki povejo veliko o Bosni:
+            </h2>
+            <div class="stats-container">
+                <div>
+                    <h3 style="text-align: center; font-size: medium;">Velikost države</h3>
+                    <div id="cnt1">0</div>
+                </div>
+                <div>
+                    <h3 style="text-align: center; font-size: medium;">Število prebivalcev</h3>
+                    <div id="cnt2">0</div>
+                </div>
+                <div>
+                    <h3 style="text-align: center; font-size: medium;">Število gradbenikov</h3>
+                    <div id="cnt3">0</div>
+                </div>
+                <div>
+                    <h3 style="text-align: center; font-size: medium;">Število Bosancev izven bosne</h3>
+                    <div id="cnt4">0</div>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <img src="src/photo4.jpeg" alt="Image 1" class="main-image">
+                <div class="side-images">
+                    <img src="src/photo4.jpeg" alt="Image 2" onclick="changeImage('src/photo3.jpeg')">
+                    <img src="src/photo2.png" alt="Image 3" onclick="changeImage('src/photo2.png')">
+                    <img src="src/photo3.jpeg" alt="Image 3" onclick="changeImage('src/photo4.jpeg')">
+                    <img src="src/photo5.jpeg" alt="Image 3" onclick="changeImage('src/photo5.jpeg')">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sarajevo">
+        <div class="sarajevo-div">
+            <h1 style="font-size: 32px;">Glavno mesto</h1>
+            <h2 style="font-size: large;">Glavno mesto bosne je Sarajevo, mogoče ga poznate, kot čevabčenica <br>
+                (najboljša v ljubljanni (če se ne strijaš jst in ti ob 3 na igrišcu)) <br> Tukaj je par dejstev or tem
+                mestu
+            </h2>
+            <li>V njem živi 275k ljudi</li>
+            <li>Ima par gor v okolici</li>
+            <li>Blizu je morja se mi zdi</li>
+            <h2 style="font-size: large;">Će ne maraš čevapov mrš vn iz bosne... <br> <br> Tukaj je video ki pove več o
+                sarajevemu</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/o0qipoyXgag?si=Hkf1uHUJDLt2-BWu"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="prehrana">
+        <div class="čevapi-div">
+            <h1 style="font-size: 32px;">Prehrana</h1>
+            <h2 style="font-size: large;">Posanci se se spomnili za eno tako enostavno, a tako okusno jed, Čevapi <br>
+                Meso oblikovano v plačke, zraven ješ tudi lepinjo in kajmak, <br> če si pravi bosance pa še prebranec.
+                <br> Tukaj je par bosanskih jedi
+            </h2>
+            <li>Mali Čevapi in lepinja</li>
+            <li>Veliki Čevapi in lepinja</li>
+            <li>Mali Čevapi in čebula</li>
+            <li>Veliki Čevapi in čebula</li>
+            <li>Mali čevapi in lepinja z čebulo</li>
+            <li>Veliki čevapi in lepinja z čebulo</li>
+            <li>Mali čevapi in lepinja z čebulo z kajmakom</li>
+            <li>Veliki čevapi in lepinja z čebulo z kajmakom</li>
+            <h2 style="font-size: large;">Tuki je tudi video kako se jih pripravi</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6gAp3_9QTz8?si=JFvemJffqj3olyWX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="Prebivalstvo">
+        <div class="čevapi-div">
+            <h1 style="font-size: 32px;">Prebivalci</h1>
+            <h2 style="font-size: large;">Work in progress
+            </h2>
+            <!-- <li>Mali Čevapi in lepinja</li>
+            <li>Veliki Čevapi in lepinja</li>
+            <li>Mali Čevapi in čebula</li>
+            <li>Veliki Čevapi in čebula</li>
+            <li>Mali čevapi in lepinja z čebulo</li>
+            <li>Veliki čevapi in lepinja z čebulo</li>
+            <li>Mali čevapi in lepinja z čebulo z kajmakom</li>
+            <li>Veliki čevapi in lepinja z čebulo z kajmakom</li> -->
+            <!-- <h2 style="font-size: large;">Tuki je tudi video kako se jih pripravi</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6gAp3_9QTz8?si=JFvemJffqj3olyWX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+        </div>
+    </section>
+    <section id="Turizem">
+        <div class="čevapi-div">
+            <h1 style="font-size: 32px;">Turizem</h1>
+            <h2 style="font-size: large;">Work in progress
+            </h2>
+            <!-- <li>Mali Čevapi in lepinja</li>
+            <li>Veliki Čevapi in lepinja</li>
+            <li>Mali Čevapi in čebula</li>
+            <li>Veliki Čevapi in čebula</li>
+            <li>Mali čevapi in lepinja z čebulo</li>
+            <li>Veliki čevapi in lepinja z čebulo</li>
+            <li>Mali čevapi in lepinja z čebulo z kajmakom</li>
+            <li>Veliki čevapi in lepinja z čebulo z kajmakom</li> -->
+            <!-- <h2 style="font-size: large;">Tuki je tudi video kako se jih pripravi</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6gAp3_9QTz8?si=JFvemJffqj3olyWX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+        </div>
+    </section>
+
+</body>
+
+<script>
+    function countUpTo(targetValue, duration, elementId) {
+        const element = document.getElementById(elementId);
+        const initialValue = parseInt(element.textContent);
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const progress = elapsedTime / (duration * 1000);
+
+            if (progress < 1) {
+                const newValue = Math.ceil(initialValue + (targetValue - initialValue) * progress);
+                element.textContent = newValue;
+                requestAnimationFrame(updateCounter);
+            } else {
+                element.textContent = targetValue;
+            }
+        }
+
+        requestAnimationFrame(updateCounter);
+    }
+
+    // Example usage:
+    countUpTo(4500, 3, 'cnt1'); // Count up to 4500 in 5 seconds
+    countUpTo(3271000, 3, 'cnt2'); // Count up to 1000000 in 5 seconds
+    countUpTo(3271000, 3, 'cnt3'); // Count up to 1000000 in 5 seconds
+    countUpTo(1320000, 3, 'cnt4'); // Count up to 1000000 in 5 seconds
+</script>
+
+<script>
+    const mainImage = document.querySelector('.main-image');
+    const sideImages = document.querySelectorAll('.side-images img');
+    let currentIndex = 0;
+
+    function changeImage(imageSrc) {
+        mainImage.style.opacity = 0;
+        setTimeout(() => {
+            mainImage.src = imageSrc;
+            mainImage.style.opacity = 1;
+        }, 500);
+    }
+
+    function autoChangeImage() {
+        currentIndex = (currentIndex + 1) % sideImages.length;
+        const nextImageSrc = sideImages[currentIndex].src;
+        changeImage(nextImageSrc);
+    }
+
+    // Automatically change image every 5 seconds (adjust as needed)
+    setInterval(autoChangeImage, 5000);
+</script>
+
+
+</html>
